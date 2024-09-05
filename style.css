@@ -1,0 +1,62 @@
+/* Reset default styling - Optional */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Algemene opmaak */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;  /* Zorg dat de body minimaal de volledige viewport hoogte bedekt */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #444;
+    font-weight: bold;  /* Headers dikgedrukt */
+}
+
+main {
+    flex-grow: 1; /* Zorg dat main zich uitrekt om het resterende beschikbare ruimte te vullen */
+    padding: 20px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Footer blijft onderaan de pagina */
+}
+
+/* Zorg dat de video niet over de tekst gaat */
+iframe {
+    margin-bottom: 30px;  /* Voegt wat ruimte onder de video toe */
+}
